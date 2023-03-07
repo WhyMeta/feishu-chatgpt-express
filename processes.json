@@ -1,0 +1,16 @@
+[
+  {
+    "script": "index.js",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file": "./logs/pm2_error.log",
+    "out_file": "./logs/pm2_out.log",
+    "pid_file": "./logs/pm2_node.pid",
+    "env": {
+      "APPID": "# 你的飞书机器人APPID", 
+      "SECRET": "# 你的飞书机器人App Secret",
+      "BOTNAME": "#你创建的企业自建应用的名称",
+      "MODEL": "gpt-3.5-turbo",
+      "KEY": "OpenAI API Key"
+    }
+  }
+]
