@@ -246,7 +246,7 @@ async function discardConversation(sessionId) {
   let totalSize = 0;
   const countList = [];
   const historyMsgs = await new Promise((resolve, reject) => {
-    db.get(`SELECT id, msgSize FROM ${MsgTable} WHERE session_id = ?`, [sessionId], (err) => {
+    db.all(`SELECT id, msgSize FROM ${MsgTable} WHERE session_id = ?`, [sessionId], (err) => {
       if (err) {
         reject(err);
       } else {
